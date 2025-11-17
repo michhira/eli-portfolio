@@ -1,0 +1,5 @@
+- [x] Add translations for navbar items in content object for all languages (en, rw, fr)
+- [x] Update Header component to use translated nav items
+- [x] Add stub components for missing sections (AboutSection, SkillsSection, ProjectsSection, etc.)
+- [x] Remove erroneous "import App" line at the end
+- [x] Run the app to verify it works without errors (dev server started successfully at http://localhost:5173/)
