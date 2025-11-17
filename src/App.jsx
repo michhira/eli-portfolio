@@ -1,6 +1,16 @@
 // App.js - Complete with all sections defined
 import React, { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
+import Navbar from './Components/Navbar.jsx';
+import Footer from './Components/Footer.jsx';
+import HomePage from './pages/Homepage.jsx';
+import AboutPage from './pages/AboutPage.jsx';
+import SkillsPage from './pages/SkillsPage.jsx';
+import ProjectsPage from './pages/ProjectsPage.jsx';
+import GalleryPage from './pages/GalleryPage.jsx';
+import ContactPage from './pages/ContactPage.jsx';
+import ServicesPage from './pages/ServicesPage.jsx';
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -136,30 +146,24 @@ const App = () => {
 
   return (
     <div className={`App ${darkMode ? 'dark' : ''}`}>
-      <Header 
-        menuOpen={menuOpen} 
-        toggleMenu={toggleMenu}
+      <Navbar
         darkMode={darkMode}
         toggleDarkMode={toggleDarkMode}
         language={language}
         setLanguage={setLanguage}
-        activeSection={activeSection}
-        smoothScroll={smoothScroll}
-        t={t}
       />
-      
-      <HeroSection t={t} smoothScroll={smoothScroll} />
-      <AboutSection t={t} />
-      <SkillsSection t={t} />
-      <ProjectsSection t={t} />
-      <GallerySection t={t} />
-      <ServicesSection t={t} />
-      <ExperienceSection t={t} />
-      <TestimonialsSection t={t} />
-      <CertificationsSection t={t} />
-      <BlogSection t={t} />
-      <ContactSection t={t} />
-      <Footer t={t} />
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/skills" element={<SkillsPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+
+      <Footer />
     </div>
   );
 };
@@ -913,29 +917,6 @@ const ContactSection = ({ t }) => {
   );
 };
 
-// Footer Component
-const Footer = ({ t }) => {
-  return (
-    <footer className="footer">
-      <div className="container">
-        <div className="footer-content">
-          <div className="footer-info">
-            <h3>Kwizera Eli</h3>
-            <p>Building Construction Technician & Construction Specialist</p>
-            <div className="social-links">
-              <a href="#"><i className="fab fa-linkedin"></i></a>
-              <a href="#"><i className="fab fa-twitter"></i></a>
-              <a href="#"><i className="fab fa-facebook"></i></a>
-              <a href="#"><i className="fab fa-instagram"></i></a>
-            </div>
-          </div>
-          <div className="footer-copyright">
-            <p>&copy; 2023 Kwizera Eli. All rights reserved.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
-};
+
 
 export default App;
