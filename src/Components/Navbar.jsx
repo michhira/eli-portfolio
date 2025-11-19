@@ -18,7 +18,7 @@ const Navbar = ({ darkMode, toggleDarkMode, language, setLanguage }) => {
     { path: '/gallery', label: 'Gallery' },
     { path: '/services', label: 'Services' },
     { path: '/experience', label: 'Experience' },
-    { path: '/testimonials', label: 'Testimonials' },
+
     { path: '/certifications', label: 'Certifications' },
     { path: '/blog', label: 'Blog' },
     { path: '/contact', label: 'Contact' }

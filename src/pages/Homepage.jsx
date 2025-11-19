@@ -17,7 +17,7 @@ const HomePage = () => {
           <div className={`hero-content ${isVisible ? 'visible' : ''}`}>
             <h1>Kwizera Eli</h1>
             <div className="title">Building Construction Technician / Construction Specialist</div>
-            <p>Dedicated construction professional with expertise in site supervision, construction methods, and project management. Committed to delivering high-quality construction projects on time and within budget.</p>
+            <p>Dedicated construction professional with expertise in site supervision, construction methods, and project management.</p>
             <div className="hero-buttons">
               <Link to="/contact" className="btn">
                 <i className="fas fa-briefcase"></i> Hire Me
