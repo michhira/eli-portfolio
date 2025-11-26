@@ -27,28 +27,6 @@ const Footer = () => {
           </div>
 
           <div className="footer-section">
-            <h4>Quick Links</h4>
-            <ul className="footer-links">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/services">Services</Link></li>
-              <li><Link to="/projects">Projects</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
-            </ul>
-          </div>
-
-          <div className="footer-section">
-            <h4>Services</h4>
-            <ul className="footer-links">
-              <li><Link to="/services">Construction Supervision</Link></li>
-              <li><Link to="/services">House Renovation</Link></li>
-              <li><Link to="/services">Masonry Works</Link></li>
-              <li><Link to="/services">Quantity Estimation</Link></li>
-              <li><Link to="/services">Roof Installation</Link></li>
-            </ul>
-          </div>
-
-          <div className="footer-section">
             <h4>Contact Info</h4>
             <div className="contact-info">
               <p><i className="fas fa-phone"></i> +250 790231754</p>
